@@ -66,14 +66,14 @@ function createElement(tagName, className, htmlContent){
 
 
 function numberRandom(minNum, maxNum, elements){
-    const numbersList = []
+    let numbersList = []
 
     if ( (minNum - maxNum) < elements){
         return []
     }
 
-    while (numbersList.length < elements){  //con il ciclo while finchè la number list è minore del numero degli elementi il ciclo inserisce i numeri
-        let newRandomNumber = getRandomInt(1,100); // definisco con una variabile il numero dei numeri casuali
+    while (numbersList.length < 16){  //con il ciclo while finchè la number list è minore del numero degli elementi il ciclo inserisce i numeri
+        let newRandomNumber = getRandomInt(1,100, 16); // definisco con una variabile il numero dei numeri casuali
         if (!numbersList.includes(newRandomNumber)){ // qui scrivo "finchè questo non è incluso (!) allora aggiungilo"
             numbersList.push(newRandomNumber); // se invece è già incluso finisce l'if e genera un'altro while
         }
