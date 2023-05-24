@@ -83,6 +83,11 @@ function numberRandom(minNum, maxNum, elements){
     } 
 
 
+    const bombCell = createElement('div','cell
+
+    bombCell.addEventListener('click', function(){
+
+    }
 
 
 
