@@ -57,3 +57,8 @@ div.grid .cell.cell-hard{
     width: calc(100% / 7);
     height: calc(100% / 7);
 }
+
+
+div.grid .cell.bomb{
+    background-color: red;
+}
